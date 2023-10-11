@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# ReactApp for the Samsung SmartThings ImageCapability Checking
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was developed to check the ImageCapability image of SmartThings.
 
-## Available Scripts
+This project based on react framework.
 
-In the project directory, you can run:
+## Setup Instructions
 
-### `npm start`
+### Prerequisites
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- A [Samsung account](https://account.samsung.com/membership/index.do) and the SmartThings mobile application.
+- A [Developer Workspace](https://smartthings.developer.samsung.com/workspace/) account.
+- SmartThings Devices(ex. Camera)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### If testing locally (using provided webserver)
 
-### `npm test`
+- [Node.js](https://nodejs.org) and [npm](https://npmjs.com) installed (verified with npm version 6.14.8 and Node 12.19.0).
+- [ngrok](https://ngrok.com/) installed to create a secure tunnel and create a globally available URL for fast testing.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Start
 
-### `npm run build`
+#### Local - Server
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Install the dependencies for server : `npm install`.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Start the server: `npm start`.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Start ngrok (in another terminal window/tab): `ngrok http 3005`. Copy the `https:` URL to your clipboard.
 
-### `npm run eject`
+#### Local - Front
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Install the dependencies for this app : `npm install`.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Start the project: `npm start`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+#### Check Images
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. (After you run above projects)Depending on the content of the SmartApp, information corresponding to the imageURL in the imageCapture results when an event occurs for SmartThings devices is stored in the path `http://localhost:3005/api/image` and data can be retrieved by sending a request to this URL from the frontend projects.
 
-## Learn More
+2. Recall capture results URL from server - Click on the URL list you want - Enter token issued by [SmartThings](https://account.smartthings.com/tokens) - Load selected Image
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+3. You can check and save the desired image from the list of images captured since the server operation.
