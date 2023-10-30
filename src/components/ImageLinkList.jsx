@@ -6,7 +6,7 @@ const ImageLinkList = ({ data, onClick }) => {
     <LinkListBox>
       {data.map((url, index) => (
         <div key={index} onClick={() => onClick(url, index + 1)}>
-          {index + 1 + "번 : " + url}
+          {index + 1 + " index ⇒ " + url}
         </div>
       ))}
     </LinkListBox>
