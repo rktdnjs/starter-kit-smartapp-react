@@ -19,7 +19,13 @@ This project based on react framework.
 
 ### Start
 
+```
+Description for this Project : https://bronzed-amount-986.notion.site/How-to-use-starter-kit-smartapp-react-0ed53f6cab9143a8b04fb7ada53f2496?pvs=4
+```
+
 #### Local - Server
+
+- [BackEnd Project Repository](https://github.com/kwanghoon/starter-kit-smartapp-nodejs)
 
 1. Install the dependencies for server : `npm install`.
 
@@ -28,6 +34,8 @@ This project based on react framework.
 3. Start ngrok (in another terminal window/tab): `ngrok http 3005`. Copy the `https:` URL to your clipboard.
 
 #### Local - Front
+
+- [FrontEnd Project Repository](https://github.com/rktdnjs/starter-kit-smartapp-react)
 
 1. Install the dependencies for this app : `npm install`.
 
