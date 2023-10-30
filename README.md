@@ -19,9 +19,7 @@ This project based on react framework.
 
 ### Start
 
-```
-Description for this Project : https://bronzed-amount-986.notion.site/How-to-use-starter-kit-smartapp-react-0ed53f6cab9143a8b04fb7ada53f2496?pvs=4
-```
+Description for this Project : [Link](https://bronzed-amount-986.notion.site/How-to-use-starter-kit-smartapp-react-0ed53f6cab9143a8b04fb7ada53f2496?pvs=4)
 
 #### Local - Server
 
